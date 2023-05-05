@@ -8,7 +8,7 @@ import { fromEvent, interval, of, takeUntil, timer, combineLatest } from 'rxjs';
 })
 export class CombineLatestComponent {
 
-  //===================COMBINE-LATEST OPRATOR===================//
+  //===================COMBINE-LATEST OPRATOR===================// call  root html file
   ngOnInit(): void {
     const source = of('a', 'b', 'c', 'd');
     const source2 = of('1', '2', '3', '4');

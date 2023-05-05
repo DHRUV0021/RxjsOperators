@@ -34,5 +34,4 @@ export class SwitchMapComponent {
     ngAfterViewInit(): void {
       this.test();
     }
-
 }

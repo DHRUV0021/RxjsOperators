@@ -8,10 +8,6 @@ import { concat, interval, map, of, range, take, concatAll, from, concatMap, mer
 })
 export class ConcatComponent {
 
-
-
-
-
   //===================CONCAT OPRATOR===================//
   getData(data: any) {
     return of(data + ' API CAll>>');

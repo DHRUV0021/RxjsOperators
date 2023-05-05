@@ -15,7 +15,7 @@ export class FirstComponent {
   subscribe: any;
 
   
-  first(){
+  firstgetData(){
     this.example = this.source.pipe(first((val:any) => val > 5 ,'nothing'));
     
     this.subscribe  = this.example.subscribe({
@@ -32,28 +32,6 @@ export class FirstComponent {
     console.log(this.subscribe);
   }
   
-    //===================TAKE OPRATOR===================//
-  takeoprator: any;
-  oprators: any;
-
-  take =  from ([1,2,3,4,5,6]);
-
-  Take(){
-    this.takeoprator = this.take.pipe(take(2));
-    this.oprators = this.takeoprator.subscribe({
-      next:(val:any)=>{
-        console.log(val);
-      },
-      error:(err:any)=>{
-        console.log(err);
-      },
-      complete:()=>{
-        console.log("Take  oprator example");
-      }
-    })
-    console.log(this.oprators);
-
-  }
 
   //===================PLUCK OPRATOR===================//
 
@@ -62,7 +40,7 @@ export class FirstComponent {
 
   plucks = from ([{name : 'dhruv' , age :20} ,{name : 'Gorasiya' , age :20}]);
 
-  Pluck(){
+  PluckGetData(){
     this.pluckExample = this.plucks.pipe(pluck('name'));
 
     this.pluckoprator = this.pluckExample.subscribe({
@@ -75,7 +53,6 @@ export class FirstComponent {
       complete:()=>{
         console.log('pluck oprator  example');
       }
-      
     })
     console.log(this.pluckoprator);
   }

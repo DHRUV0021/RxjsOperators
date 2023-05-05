@@ -31,7 +31,6 @@ export class PipeComponent {
   }
 
   //===================FROM OPRATOR & MAP OPRATOR  ===================//
-
   mapping = from([1, 2, 3, 4, 5, 6])
   abc: any;
   maps: any;
@@ -51,7 +50,6 @@ export class PipeComponent {
       }
     });
     console.log(this.maps);
-
   }
 
 }

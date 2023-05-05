@@ -8,7 +8,7 @@ import { of } from 'rxjs';
 })
 export class OfComponent {
 
-  source = of(1,2,3,4,5,6,7,8);
+  source = of(1,2,3,4,5,6,7,8);  //this is a observable 
  of(){
    const subscribe = this.source.subscribe(val => console.log(val));
  }
